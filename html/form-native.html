@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form | Native</title>
+    <link rel="stylesheet" href="../style/form-native.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container flex items-center">
+        <h1 class="brand">Form Mahasiswa</h1>
+      </div>
+    </header>
+    <main class="">
+      <div class="container">
+        <form action="">
+          <div class="form-field">
+            <label for="nama">Nama</label>
+            <input type="text" name="nama" placeholder="John Doe" id="nama" />
+          </div>
+          <div class="form-field">
+            <label for="nim">NIM</label>
+            <input type="number" name="nim" placeholder="0813675123" id="nim" />
+          </div>
+          <div class="form-field">
+            <label for="">Jurusan</label>
+            <select name="jurusan" id="jurusan">
+              <option value="teknik-informatika">Teknik Informatika</option>
+              <option value="sistem-informasi">Sistem Informasi</option>
+              <option value="hukum">Hukum</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="">Jenis Kelamin</label>
+            <div>
+              <input type="radio" name="jenis-kelamin" id="pria" />
+              <label for="pria">Pria</label>
+            </div>
+            <div>
+              <input type="radio" name="jenis-kelamin" id="wanita" />
+              <label for="wanita">Wanita</label>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="">Status</label>
+            <div>
+              <input type="radio" name="status" id="menikah" />
+              <label for="menikah">Menikah</label>
+            </div>
+            <div>
+              <input type="radio" name="status" id="belum-menikah" />
+              <label for="belum-menikah">Belum Menikah</label>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="">Keterangan</label
+            ><textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

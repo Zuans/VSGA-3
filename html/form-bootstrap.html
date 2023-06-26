@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar | Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- As a link -->
+      <nav class="navbar navbar-light bg-dark">
+        <div class="container">
+          <a class="navbar-brand text-light fw-bolder" href="#"
+            >Form Mahasiswa</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <form class="bg-dark p-5 mt-5 rounded-2 text-light">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nama</label>
+          <input
+            type="email"
+            class="form-control"
+            id="name"
+            aria-describedby="emailHelp"
+            placeholder="John Doe"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="nim" class="form-label">NIM</label>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="2210113849"
+            id="nim"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="jurusan">Jurusan</label>
+          <select class="form-select" aria-label="Default select example">
+            <option value="teknik-informatika">Teknik Informatika</option>
+            <option value="sistem-informasi">Sistem Informasi</option>
+            <option value="hukum">Hukum</option>
+          </select>
+        </div>
+
+        <div class="mb-4 d-flex">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="jenis-kelamin"
+              id="pria"
+            />
+            <label class="form-check-label" for="pria1"> Pria </label>
+          </div>
+          <div class="form-check ms-3">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="jenis-kelamin"
+              id="wanita"
+            />
+            <label class="form-check-label" for="wanita"> Wanita </label>
+          </div>
+        </div>
+        <div class="mb-4 d-flex">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="status"
+              id="menikah"
+            />
+            <label class="form-check-label" for="menikah"> Menikah </label>
+          </div>
+          <div class="form-check ms-3">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="status"
+              id="belum-menikah"
+            />
+            <label class="form-check-label" for="belum-menikah">
+              Belum Menikah
+            </label>
+          </div>
+        </div>
+
+        <div class="form-floating">
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextarea2"
+            style="height: 100px"
+          ></textarea>
+          <label for="floatingTextarea2">Keterangan</label>
+        </div>
+
+        <button type="submit" class="btn mt-5 btn-primary">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

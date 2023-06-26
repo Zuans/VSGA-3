@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar | Native</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/navbar-native.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container flex items-center">
+        <h1 class="brand">Watc<span>hess</span></h1>
+        <nav>
+          <ul class="flex">
+            <li>Home</li>
+            <li class="dropdown">
+              Trending
+              <ul>
+                <li>Daily</li>
+                <li>Weekly</li>
+              </ul>
+            </li>
+            <li>For You</li>
+            <li>About</li>
+          </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" name="search" id="input-search" />
+          <button class="btn-search">search</button>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
